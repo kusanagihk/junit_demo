@@ -1,1 +1,4 @@
-hi
+scenario:
+a user wants to call a taxi / cab through an app.
+The app provides information based on the user's criteria (e.g. location, cab quality, usb charger)
+Payment is done on the app and order is settled
