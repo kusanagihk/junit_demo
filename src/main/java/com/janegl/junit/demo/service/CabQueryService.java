@@ -3,7 +3,6 @@ package com.janegl.junit.demo.service;
 import com.janegl.junit.demo.dao.ICabDao;
 import com.janegl.junit.demo.model.CabUnit;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

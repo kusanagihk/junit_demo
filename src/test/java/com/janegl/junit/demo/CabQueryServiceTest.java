@@ -40,9 +40,9 @@ public class CabQueryServiceTest extends AbstractJUnitTest {
     public void prepareMocks() {
         List<CabUnit> cabUnits = new ArrayList<CabUnit>();
 
-        cabUnits.add(new CabUnit("cab_111", "johnny deepe", "abc1234", 5, "Abbey Road 12"));
-        cabUnits.add(new CabUnit("cab_234", "tony stark", "28948da", 3, "Omni Bay, 15th"));
-        cabUnits.add(new CabUnit("cab_961", "elize", "jfujj111", 4, "Granny's cottage, 27th, avenue 1"));
+        cabUnits.add(new CabUnit("cab_111", "johnny deepe", "abc1234", 5, "Abbey Road 12", false));
+        cabUnits.add(new CabUnit("cab_234", "tony stark", "28948da", 3, "Omni Bay, 15th", true));
+        cabUnits.add(new CabUnit("cab_961", "elize", "jfujj111", 4, "Granny's cottage, 27th, avenue 1", true));
 
         // defining what to return when the queryAll method is invoked
         Mockito.when(cabDao.queryAll()).thenReturn(cabUnits);

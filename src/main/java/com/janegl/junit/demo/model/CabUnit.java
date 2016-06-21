@@ -13,12 +13,19 @@ public class CabUnit {
      * @param seatsAvailable
      * @param cabLocation
      */
-    public CabUnit(String cabNumber, String driverName, String driverLicence, int seatsAvailable, String cabLocation) {
+    public CabUnit(String cabNumber,
+                   String driverName,
+                   String driverLicence,
+                   int seatsAvailable,
+                   String cabLocation,
+                   boolean hasUsbCharger) {
+
         this.cabLocation = cabLocation;
         this.cabNumber = cabNumber;
         this.driverLicence = driverLicence;
         this.driverName = driverName;
         this.seatsAvailable = seatsAvailable;
+        this.hasUsbCharger = hasUsbCharger;
     }
 
     public CabUnit() {
@@ -31,6 +38,8 @@ public class CabUnit {
     public int seatsAvailable;
 
     public String cabLocation;
+    public boolean hasUsbCharger = false;
+
 
     @Override
     public String toString() {
@@ -40,6 +49,7 @@ public class CabUnit {
                 ", driverLicence='" + driverLicence + '\'' +
                 ", seatsAvailable=" + seatsAvailable +
                 ", cabLocation='" + cabLocation + '\'' +
+                ", hasUsbCharger='" + hasUsbCharger + '\'' +
                 '}';
     }
 }
